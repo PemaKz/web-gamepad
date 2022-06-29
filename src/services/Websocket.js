@@ -1,4 +1,5 @@
 import {w3cwebsocket as WSocket} from 'websocket';
+import config from '../config';
 
 export default new class Websocket {
   // eslint-disable-next-line
@@ -9,7 +10,7 @@ export default new class Websocket {
   // eslint-disable-next-line
   connect() {
     if (this.isConnected) return;
-    const socket = new WSocket('ws://localhost:8080');
+    const socket = new WSocket(config.websocket);
     this.isConnected = true;
     this.webSocket = socket;
     return socket;

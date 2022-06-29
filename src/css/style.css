@@ -23,8 +23,8 @@ button{
 .actionbuttons{
   border-radius: 50%;
   background: var(--action-color);
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   background-color: var(--action-color);
   font-size: 16px;
   font-weight: 900;
@@ -38,14 +38,14 @@ button{
 }
 
 .xbuttons{
-  width: 5rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   background-color: var(--joystick-color);
 }
 
 .ybuttons{
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   background-color: var(--joystick-color);
 }
 
