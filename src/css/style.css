@@ -1,0 +1,73 @@
+:root{
+  --action-color: #f31818;
+  --menubuttons-color: #000;
+  --joystick-color: #000;
+  --rotation:0deg;
+}
+
+body,html{
+  background-color: #fff;
+}
+
+body{
+  overflow: hidden;
+  font-size: 10px;
+}
+
+button{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.actionbuttons{
+  border-radius: 50%;
+  background: var(--action-color);
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--action-color);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.menubuttons{
+  border-radius: 5px;
+  width: 3rem;
+  height: 1.5rem;
+  background-color: var(--menubuttons-color);
+}
+
+.xbuttons{
+  width: 5rem;
+  height: 4rem;
+  background-color: var(--joystick-color);
+}
+
+.ybuttons{
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--joystick-color);
+}
+
+@media (orientation: landscape) {
+  .pad{
+    height: 33vh;
+    width: 100vw;
+  }
+  .App{
+    display: flex!important;
+    height: 100vh;
+  }
+}
+
+@media (orientation: portrait) {
+  .pad{
+    height: 33vh;
+    width: 100vw;
+    transform: rotate(90deg);
+  }
+  .App{
+    display: block!important;
+    height: 100vh;
+  }
+}
